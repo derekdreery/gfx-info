@@ -1,0 +1,16 @@
+[package]
+name = "gfx-info"
+description = "A program to display information on the configuration of your graphics adapters according to gfx-hal"
+version = "0.1.0"
+authors = ["Richard Dodd <richard.o.dodd@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+ansi_term = "*"
+bytesize = "*"
+
+[dependencies.gfx-hal]
+path = "../gfx/src/hal"
+
+[dependencies.gfx-backend-vulkan]
+path = "../gfx/src/backend/vulkan"
